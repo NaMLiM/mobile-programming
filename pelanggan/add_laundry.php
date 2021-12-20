@@ -5,7 +5,7 @@ $jumlah = $_POST['jumlah'];
 $alamat = $_POST['alamat'];
 $pelanggan = $_POST['pelanggan'];
 
-$input = mysqli_query($koneksi, "INSERT INTO `pelanggan_laundry` (`id`, `jumlah_pakaian`, `alamat`, `pelanggan`, `status_pengerjaan`) VALUES (null, '$jumlah', '$alamat', '$pelanggan', 'Menunggu')");
+$input = mysqli_query($koneksi, "INSERT INTO `pelanggan_laundry` (`id`, `jumlah_pakaian`, `alamat`, `pelanggan`, `status_pengerjaan`) VALUES (null, '$jumlah', '$alamat', '$pelanggan', 'Menunggu Pickup')");
 if ($input) {
     echo "Order tersimpan!";
 } else {

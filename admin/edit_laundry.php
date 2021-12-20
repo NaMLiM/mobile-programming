@@ -2,11 +2,10 @@
 include "../koneksi.php";
 
 $id = $_POST['id'];
-$nama = $_POST['jumlah'];
-$username = $_POST['username'];
-$password = $_POST['password'];
+$jumlah = $_POST['jumlah'];
+$alamat = $_POST['alamat'];
 
-$query = mysqli_query($koneksi, "UPDATE user SET nama = '$nama', username = '$username', nama = '$password'");
+$query = mysqli_query($koneksi, "UPDATE pelanggan_laundry SET jumlah = '$nama', alamat = '$alamat'");
 
 if ($query) {
     echo "Sukses Edit!";

@@ -9,9 +9,9 @@ while ($data = mysqli_fetch_array($select)) {
 }
 
 if ($result == 'Menunggu Pickup') {
-    $query = mysqli_query($koneksi, "UPDATE pelanggan_laundry SET status_pengerjaan = 'Menunggu Pencucian'");
+    $query = mysqli_query($koneksi, "UPDATE pelanggan_laundry SET status_pengerjaan = 'Menunggu Pencucian' WHERE id = '$id'");
 } else if ($result == 'Menunggu Pengantaran') {
-    $query = mysqli_query($koneksi, "UPDATE pelanggan_laundry SET status_pengerjaan = 'Selesai'");
+    $query = mysqli_query($koneksi, "UPDATE pelanggan_laundry SET status_pengerjaan = 'Selesai' WHERE id = '$id'");
 }
 
 if ($query) {

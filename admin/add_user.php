@@ -14,7 +14,7 @@ $cek = mysqli_num_rows($cek_data);
 if ($cek > 0) {
     echo "Data Sudah Ada";
 } else {
-    $input = mysqli_query($koneksi, "INSERT INTO `user` (`id`, `nama`, `username`, `password`, `status`) VALUES (null, '$nama', '$username', '$hash', 'Pelanggan')");
+    $input = mysqli_query($koneksi, "INSERT INTO `user` (`id`, `nama`, `username`, `password`, `status`) VALUES (null, '$nama', '$username', '$hash', '$status')");
     if ($input) {
         echo "Selamat Anda Telah Terdaftar";
     } else {
